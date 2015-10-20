@@ -19,27 +19,30 @@ else
   puts "it's false"
 end
 
-it's true and nil
+  it's true
 
 # 2.1 Substitue "hello" && 4.5 for 33 && 55 above. What's the output?
+this is true
 # 2.2 Substitue nil && 88 for 33 && 55 above. What's the output?
+this is false
 # 2.4 Substitue 63.4 < 64. What's the output?
+this is true
 
 # Question 3 :Strings
 
 # How would you (Yes, you can look up the String methods!):
 
 # 3.1. determine if a string is included another another string?
+puts "string example"'tr'
 # 3.2. determine if the length of a string?
 puts "string example".length
 # 3.3. Go from the string "eels in my hovercraft" to "fish in my sink" but don't
 # change the string "eels in my hovercraft"
 string_one = "eels in my hovercraft"
-string_two = string_one
+string_two = string_one.gsub(/eels/, 'fish').gsub(/hovercraft/, 'sink') # calls gsub twice - this can be done!
 
-string_two.gsub(/fish in my sink/, 'eels in my hovercraft')
-puts string_two
 puts string_one
+puts string_two
 
 # Question 4 : Variables
 # Change the below string, do NOT make copies of the string. All changes
